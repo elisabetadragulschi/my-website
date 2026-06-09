@@ -101,7 +101,7 @@
   .btn-outline:hover{border-color:var(--volt);color:var(--volt)}
   .nav-cta{display:none}
   @media(min-width:768px){.nav-cta{display:inline-flex;padding:10px 20px}}
-  .burger{display:flex;width:40px;height:40px;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;z-index:51}
+  .burger{display:flex;flex-direction:column;width:40px;height:40px;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;z-index:51}
   @media(min-width:768px){.burger{display:none}}
   .burger span{display:block;width:24px;height:2px;background:var(--bone);transition:.3s}
   .burger span+span{margin-top:6px}
@@ -112,6 +112,7 @@
   .mobile-menu{position:fixed;inset:0;z-index:49;background:var(--ink);display:none;flex-direction:column;justify-content:center;padding:0 32px}
   .mobile-menu.open{display:flex}
   .mobile-menu a{font-family:var(--font-display);font-size:clamp(2rem,9vw,3rem);font-weight:700;letter-spacing:-.04em;padding:8px 0;color:var(--bone)}
+  .mobile-menu a.btn{font-size:18px;font-weight:600;letter-spacing:0;color:var(--ink);padding:14px 32px}
 
   /* ============ HERO ============ */
   #top{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding-top:72px}
@@ -591,7 +592,7 @@
   <!-- ============ WHAT: VALUES ============ -->
   <section class="pad bt">
     <div class="container">
-      <h2 class="reveal h1" style="line-height:.92">No compromises.<br><span class="dim">No rigidity.</span><br>No <span style="color:var(--volt)">bullshit.</span></h2>
+      <h2 class="reveal h1" style="line-height:.92">No compromises.<br>No <span style="color:var(--volt)">rigidity.</span></h2>
       <div class="values" id="values"></div>
     </div>
   </section>
@@ -681,7 +682,7 @@
       <p class="script">simplified.</p>
       <p class="sub">Ready when you are.</p>
       <div style="margin-top:40px;display:flex;justify-content:center;flex-wrap:wrap;gap:16px">
-        <a class="btn btn-solid" href="mailto:hello@popupplus.co">Start your project →</a>
+        <a class="btn btn-solid" href="mailto:hello@popupcreators.ro">Start your project →</a>
         <a class="btn btn-outline" href="https://www.instagram.com/popup_plus/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           Follow on Instagram
@@ -708,8 +709,7 @@
       </div>
       <div>
         <p class="head">Contact</p>
-        <a class="big" href="mailto:hello@popupplus.co">hello@popupplus.co</a>
-        <a class="big dim" href="tel:+40700000000" style="margin-top:4px">+40 700 000 000</a>
+        <a class="big" href="mailto:hello@popupcreators.ro">hello@popupcreators.ro</a>
       </div>
       <div>
         <p class="head">Explore</p>
@@ -717,7 +717,7 @@
       </div>
       <div>
         <p class="head">Social</p>
-        <ul><li><a href="https://www.instagram.com/popup_plus/" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="#">LinkedIn ↗</a></li><li><a href="#">Behance ↗</a></li><li><a href="#">TikTok ↗</a></li></ul>
+        <ul><li><a href="https://www.instagram.com/popup_plus/" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="#">LinkedIn ↗</a></li></ul>
       </div>
     </div>
 
